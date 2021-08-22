@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    script(type='text/javascript').
+      var gls=document.createElement("script");
+      gls.src="https://person.cellit.io/static/files/gero_loader.min.js";
+      gls.onload=function(){console.log(`aqui carregando gero load`);
+      GeroLoader.init({ 
+        domain: ".b81130e476e5.ngrok.io", 
+        gero_id: "GERO-CLAR1448500" 
+      })};
+      document.head.appendChild(gls);
+  body
+    block content

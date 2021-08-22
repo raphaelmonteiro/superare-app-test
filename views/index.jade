@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  script.
+    var something = function() {
+      //- gr('CompraFinalizada', {
+      //- gr('TesteDoEvento', {
+      //-   action: 'click',
+      //-   type: 'conversion',
+      //-   category: "category",
+      //-   value: {
+      //-     category: "category",
+      //-     price: 199.98,
+      //-     name: "Net MB",
+      //-     age: "55",
+      //-     data_de_nascimento: "1987/12/27",
+      //-     mail: "raphael@gmail.com",
+      //-     gender: "male",
+      //-     fone: "940875026",
+      //-     cep: "04.083-001"
+      //-   },
+      //-   label: 'Compra finalizada'
+      //- });
+      //- gr('CompraFinalizada', {
+      //-   action: 'click',
+      //-   type: 'conversion',
+      //-   category: "category",
+      //-   value: {
+      //-     category: "category",
+      //-     price: 199.98,
+      //-     name: "Net MB",
+      //-   },
+      //-   label: 'Compra finalizada'
+      //- });
+    }
+
+  button(onclick='something()') Evento
+
+  div#teste 
